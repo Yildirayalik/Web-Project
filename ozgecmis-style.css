@@ -13,7 +13,7 @@
     height: auto; /* Otomatik yükseklik */
   }
   header,section {
-    border-bottom: 3px solid #ccc; 
+    border-bottom: 3px dotted #ccc; 
     padding-bottom: 10px; /* Opsiyonel: Alt boşluğu artırmak için */
     padding-left: 20px; /* Soldan boşluk bırakma */
   }
