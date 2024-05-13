@@ -1,0 +1,39 @@
+.hobi1
+{
+  font-family:Arial, Helvetica, sans-serif; /*Yazı Tipi ayarlanır*/
+  font-size: 16px;                          /*Yazı Boyutu ayarlanır*/                       
+  font-weight: bold;                        /*Yazıyı kalınlaştırır*/
+  margin-top: 50px;                         /* Üst boşluk */
+}
+.menucubugu
+{
+  background-color: aquamarine;
+  color: aqua;
+}
+.but
+{
+  background-color:aquamarine ;
+  font-size: 16px;                         /*buton içindeki yazı boyutu*/
+  color:rgb(2, 2, 73);                           /* Buton metin rengi */
+  font-size:medium;
+}
+.anaresim2
+{
+  margin-top: 50px;
+  margin-right: 500px;
+}
+.hobi2
+{
+  font-family:Arial, Helvetica, sans-serif; /*Yazı Tipi ayarlanır*/
+  font-size: 16px;                          /*Yazı Boyutu ayarlanır*/                       
+  font-weight: bold;                        /*Yazıyı kalınlaştırır*/
+  margin-top: 50px;
+}
+.hobi3
+{
+  font-family:Arial, Helvetica, sans-serif; /*Yazı Tipi ayarlanır*/
+  font-size: 16px;                          /*Yazı Boyutu ayarlanır*/                       
+  font-weight: bold;                        /*Yazıyı kalınlaştırır*/
+  margin-top: 0px;
+}
+

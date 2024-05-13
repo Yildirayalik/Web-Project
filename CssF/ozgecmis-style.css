@@ -1,0 +1,72 @@
+  /* header elemanını bir flex container olarak ayarla */
+  header {
+    display: flex;
+    justify-content: space-between; /* içerikleri sağa ve sola hizala */
+    flex-wrap: wrap; /* içerikler sığmazsa alt satıra geç */
+  }
+  header .resim div {
+    display: flex;
+  }
+  
+  .logo{
+    width: 10%; /* veya istediğiniz genişlik */
+    height: auto; /* Otomatik yükseklik */
+  }
+  header,section {
+    border-bottom: 3px solid #ccc; 
+    padding-bottom: 10px; /* Opsiyonel: Alt boşluğu artırmak için */
+    padding-left: 20px; /* Soldan boşluk bırakma */
+  }
+  .resim img {
+    width: 50px; /* Resim genişliğini ayarlama */
+    height: 50px; /* Resim yüksekliğini ayarlama */
+    margin-right: 10px; /* Sağa boşluk ekleme */
+  }
+  #Beceriler .skills-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Beceriler article {
+    flex-basis: 48%; /* İki sütun oluşturmak için genişlik ayarı */
+    margin-bottom: 20px; /* Alt kısımlar arasında boşluk bırak */
+  }
+  #Beceriler h3 {
+    text-decoration: underline; /* Altı çizili */
+    font-weight: bold; /* Kalınlık */
+    font-size: 20px;
+  }
+  #Deneyimler h4 {
+    text-decoration: underline; /* Altı çizili */
+    font-weight: bold; /* Kalınlık */
+    font-size: 20px;
+  }
+  #Hobiler h4 {
+    font-size: larger;
+  }
+  /* Tüm section başlıklarını düzenleme */
+  section h2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold; /* Kalınlık */
+    font-style: italic; /* Italik */
+    text-decoration: underline; /* Altı çizili */
+    color: #1d1b1b; /* Yazı rengi */
+    font-size:25px;
+  }
+  /* Footer stilini belirleme */
+  footer {
+    background-color:aquamarine; /* Arka plan rengini belirleme */
+    color: #020101; /* Yazı rengini belirleme */
+    font-size: 20px;
+    text-align: center; /* Metni ortalamak */
+    padding: 10px; /* İçeriğin etrafına boşluk ekleme */
+    font-family: "Copperplate, Papyrus, fantasy", cursive /* Yazı tipini belirleme */
+  }
+  /* Tüm sayfa genelinde paragrafları ve maddeleri düzenleme */
+  p, li {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Yazı tipini belirleme */
+    font-size: 16px; /* Yazı boyutunu belirleme */
+    font-weight: bold;
+    line-height: 1.5; /* Satır yüksekliğini ayarlama */
+    color: #181717; /* Yazı rengini belirleme */
+  }
+  
