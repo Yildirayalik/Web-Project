@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #020101;
+    /*position: fixed; /* Altın kaymasını istiyorsak böyle yaparız. */
+    bottom: 0;
+    /*text-align: center;*/
+    width: 100%;
+    z-index: 1; /* Diğer içeriklerin üzerine gelmemesi için düşük bir değer */
+}
+/* Slider'ı ortalama */
+#headerCarousel {
+    width: 90%; /* Slider'ın genişliğini istediğiniz yüzdeye ayarlayın */
+    margin: 0 auto; /* Slider'ı yatayda ortala */
+}
+
+/* Başlığı (heading) ortala ve resmin altına getir */
+.carousel-caption {
+    text-align: center; /* Yazıyı ortala */
+    left: 0;
+    right: 0;
+    margin-left: auto; /* Sola uzaklık */
+    margin-right: auto; /* Sağa uzaklık */
+    bottom: 0; /* Alt kenara hizala */
+    margin-top: 1000px; /* Yukarıdan boşluk */
+    width:auto; /* Yazının genişliği */    
+}
+/*Başlığın stili*/
+.carousel-caption h5 {
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*Fare üzerine gelince değişen özellikler*/
+.carousel-caption  p:hover {
+    background-color:rgb(255, 255, 255);
+    color:black ;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container{
+    display:inline-flex;
+}
+.orta .bolum3{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.orta .bolum3 h1{
+    font-size:2.5rem;
+}
+
+.orta .bolum3 p{
+    font-size:1.6rem;
+}
+.SatırBilgi{
+    text-align: center; /*Yazıyı ortala*/
+    margin-top: 20px; /*İçerikten önceki boşluk*/
+    margin-bottom: 20px; /*İçerikten sonraki boşluk*/
+    font-family: 'Montserrat', sans-serif; /* Font ailesini ayarlayın */
+    font-size: 24px; /* Font boyutunu ayarlayın */
+    font-weight: bold;
+    color: #ffffff; /* Metin rengini ayarlayın */
+    background-color: rgb(7, 90, 62);
+}
+.col-md-4 img{
+    max-width: 120%;
+
+}
+.col-md-4 h2 {
+    text-align: center;
+}
+.col-md-4 p {
+    font-size: auto;
+    font-weight: bold;
+}
+.FooterSon {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
