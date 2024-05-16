@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatay Hakkında Bilgi</title>
+    <link rel="stylesheet" href="yemek-style.css"> <!-- Stil dosyası bağlantısı -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Menü çubuğu -->
+    <nav class="navbar navbar-expand-lg navbar-aqua bg-dark">
+        <a class="navbar-brand" href="#">Yıldıray Ali Kara</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Menü</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Ana Sayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ozgecmis.html">Özgeçmişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sehrim.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="yemeklerimiz.html">Yemeklerimiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">İletişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Giriş</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Hatay'ın Lezzet Şöleni: Yöresel Tatlarla Tanışın!</h1>
+
+        <p>Hatay mutfağı, zengin aromaları ve eşsiz lezzetleriyle Türk mutfağının en önemli bölgelerinden biridir.
+            Hatay'a
+            özgü yemekler, genellikle baharatların bolca kullanıldığı, yoğurt ve taze sebzelerle zenginleştirilen
+            lezzetli
+            tatlar sunar. Hatay mutfağının en bilinen yemeklerinden biri olan "kebap", yöreye özgü baharatlarla
+            hazırlanarak
+            eşsiz bir lezzet sunar. Ayrıca, humus, biberli ekmek, kısır ve içli köfte gibi yöresel lezzetler de Hatay
+            mutfağının vazgeçilmezleri arasındadır. Hatay'ın eşsiz mutfağıyla tanışmaya hazır mısınız? O zaman sizi,
+            Hatay'ın lezzet şölenine davet ediyoruz!
+        </p>
+        <p> Aşağıda, Hatay mutfağının birkaç seçkin lezzetinden bazıları
+            gösterilmiştir. Bu yöresel lezzetleri evinizde denemek isterseniz ismine tıklayarak tariflere
+            ulaşabilirsiniz.
+        </p>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/biberliekmek.jpg" alt="Resim 1">
+                    <div class="baslik">
+                        <a href="https://www.youtube.com/watch?v=WLS7OcWNpSA" target="_blank">Biberli Ekmek</a>
+                    </div>
+                    <div class="aciklama">
+                        Biberli ekmek,Hatay için çok önemli bir yere sahip. Hem kahvaltılarda hem gün
+                        içerisinde tüketilen Biberli Ekmek, yöre halkı tarafından yaz aylarında pikniğe giderken
+                        yanlarında
+                        götürülecek kadar seviliyor. Tıpkı bir lahmacun ve pizza gibi kendine ait sosu ile hazırlanan bu
+                        lezzet, susam taneleri ile süsleniyor. Sosunda baharat, biber, salça ve soğan gibi pek çok
+                        farklı
+                        malzeme var. Hatay’da neredeyse her evde kahvaltı sofralarını süsleyen Biberli Ekmek, hem sıcak
+                        hem
+                        soğuk olarak tüketilebiliyor
+                    </div>
+                </div>
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/tepsikebabi.jpg" alt="Resim 2">
+                    <div class="baslik">
+                        <a href="https://www.youtube.com/watch?v=Jlm7rPs_liI" target="_blank">Tepsi Kebabı</a> 
+                    </div>
+                    <div class="aciklama">
+                        Tepsi Kebabını Hatay haricinde ülkenin pek çok farklı şehrinde görmüş
+                        olabilirsiniz. Ancak tepsi kebabının orijinal versiyonunun Hatay’da yenmesi gerektiğini söylemek
+                        gerek. Evlerde sıklıkla hazırlanan Tepsi Kebabı; kıyma, soğan, patates, biber ve domates ile
+                        hazırlanıyor. Kebap kendine ait yağı ile pişiyor olması sebebiyle unutulmayacak bir lezzet
+                        yaratıyor. Ancak içeriğinden dolayı ağır bir yemek olduğunu söylemek gerek. Dolayısıyla akşam
+                        saatlerinde ve genellikle soğuk havalarda tercih edildiğini dile getirmekte fayda var!</div>
+                </div>
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/oruk.jpg" alt="Resim 3">
+                    <div class="baslik">
+                        <a href="https://www.youtube.com/watch?v=rsqe5QqeZuE" target="_blank">Oruk[İçli Köfte]</a>
+                    </div>
+                    <div class="aciklama">
+                        Hatay’da içli köfte, Oruk ismi ile anılıyor. Ancak Oruk adlı bu içli köftenin
+                        herhangi bir yerde yediğiniz klasik bir içli köfte ile tamamen aynı olduğunu düşünmek büyük bir
+                        hata
+                        olur. Klasik İçli Köfte ile Oruk arasındaki en büyük fark, Oruk’un içerisine konulan dövülmüş
+                        et.
+                        Bunun yanı sıra her içli köfte yapımında olduğu gibi Oruk yapımında da büyük bir ustalık
+                        gerekiyor.
+                        Ceviz, soğan, bulgur, et, zeytinyağı ve çeşitli baharatlar kullanılarak zengin bir içeriğe sahip
+                        hâle getirilen oruk, genellikle akşam yemeklerinde tüketiliyor.
+                    </div>
+                </div>
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/kombe.jpg" alt="Resim 4">
+                    <div class="baslik">Kömbe</div>
+                    <div class="aciklama">Antakya Kömbesi, Hatay’a dair en önemli tatlılardan
+                        biri.Hatay’da hazırlanan versiyonu diğer bölgelerde hazırlanan versiyonlarından oldukça
+                        farklı. Hatay Kömbesi; içerisinde karanfil, mahlep, tarçın, yenibahar, zencefil ve damla sakızı
+                        gibi
+                        pek çok
+                        farklı ham madde bulunuyor. Baharatlar ile zenginleştirilen kömbe, yumurta ve yoğurt bulunmayan
+                        bir
+                        hamur ile hazırlanıyor. Bu özelliğiyle uzun süre taze kaldığını dile getirmek mümkün.
+                        Bayram sofralarında çokça tüketilir.</div>
+                </div>
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/kirectekabak.jpg" alt="Resim 5">
+                    <div class="baslik">Kireçte kabak tatlısı</div>
+                    <div class="aciklama">Hatay’da hazırlanan Kireçte Kabak Tatlısı’nın klasik Kabak Tatlısı’na
+                        oranla çok daha farklı olduğunu söylemek yanlış olmaz. Öyle ki bu tatlı, neredeyse klasik kabak
+                        tatlısını sevmeyenler tarafından bile beğeni görüyor.
+                        Bölgede yetişen bal kabaklarından hazırlanan ve sönmemiş kireçte bekletilerek pişirilen Kireçte
+                        Kabak Tatlısı, kendine ait eşsiz aroması ile âdeta büyülüyor. Genellikle ceviz ve tahin ile
+                        servis
+                        edilir. Mutlaka denemelisiniz.</div>
+                </div>
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/kunefe2.jpeg" alt="Resim 6">
+                    <div class="baslik">Künefe</div>
+                    <div class="aciklama">Künefe, Türkiye için en önemli lezzetlerden biri haline geldiği için
+                        Türkiye’nin
+                        pek çok farklı noktasında karşılaşabileceğiniz bir lezzet. Ancak Hatay’da tadacağınız Künefe’yi
+                        hayat boyu unutamayacağınızı söylemek gerekiyor. Tuzsuz Antakya Peyniri, kadayıf, fıstık ve
+                        şerbet
+                        ile hazırlanan künefe; yiyenlerin bir daha unutamayacağı bir lezzet oluyor.</div>
+                </div>
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/belen_tava.jpg" alt="Resim 6">
+                    <div class="baslik">Belen Tava</div>
+                    <div class="aciklama">Hatay seyahatimiz esnasında mutlaka denemeniz gereken bir lezzet olan Belen
+                        Tava,
+                        ekmek ile lezzeti bütünleşen yöresel bir tat. En önemli özelliği arasında yalnızca lezzeti değil
+                        bunun yanı sıra çok doyurucu olması da var. Hatay’ın en yüksek ilçesi olan Belen’de ortaya çıkan
+                        dolayısıyla bugün ilçe sınırlarını aşarak bütün Hatay’a ulaşmış olan Belen Tava, ilçenin ismi
+                        ile
+                        anılıyor. İçerisinde kuzu kuşbaşı, biber, soğan, sarımsak baharatlar bulunuyor. Özellikle soğuk
+                        kış
+                        günlerinin en sevilen lezzetlerinden biridir.</div>
+                </div>
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/çökelek.png" alt="Resim 6">
+                    <div class="baslik">Çökelek Salatası</div>
+                    <div class="aciklama">Çökelek; süt, yoğurt veya ayranın kaynatılmasıyla elde edilen, çok az tuzlu
+                        veya
+                        tuzsuz, yapımı kolay, kahvaltıda doğrudan tüketilebildiği gibi pasta, börek, çörek gibi
+                        mamullerin
+                        yapımında da kullanılabilen bir peynir çeşididir. Besin yönünden zengin ve oldukça hafif bir
+                        peynir
+                        türüdür. Anadolu’da “kesik”, “ekşimik”, “torak”, “hamçökelek”ve “keş” isimleriyle de
+                        bilinmektedir.Antakya'nın çok değerli lezetlerinden birisidir çökelek. Sabah kahvaltılarında,
+                        ve salatalarda sıklıkla kullanılmaktadır.</div>
+                </div>
+                <div class="col-md-4" onclick="aciklamaGoster(this)">
+                    <img src="Yemek/eksilicorba.jpg" alt="Resim 6">
+                    <div class="baslik">Hatay Ekşili Çorba</div>
+                    <div class="aciklama">Ekşili çorba, Türk mutfağının önemli bir çorba çeşididir ve Hatay yöresine
+                        özgü
+                        bir tarif olan Hatay ekşili çorbası da bu lezzetli çorbalar arasında yer alır. Hatay ekşili
+                        çorba,
+                        yoğurt ve limon suyuyla ekşimsi bir tat verilen, içinde nohut ve bulgur gibi malzemeler bulunan,
+                        oldukça doyurucu ve lezzetli bir çorbadır.Hatay ekşili çorba genellikle soğuk kış günlerinde
+                        tercih
+                        edilir. Çorbada kullanılan yoğurt, limon suyu, sarımsak ve baharatlar çorbaya karakteristik bir
+                        lezzet katar. Genellikle ana yemeklerin başlangıcında veya yanında servis edilir.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="yemek.js"></script>
+    <!--Ana menü çubuğu için bootstrap etiketi-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
