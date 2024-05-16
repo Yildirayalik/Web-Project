@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    margin-top: 20px; /* Üst boşluk ekledik */
+}
+
+.col-md-4 {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Resim ve açıklamayı sığdırmak için */
+    margin-bottom: 20px; /* Alt boşluk ekledik */
+}
+.col-md-4 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.baslik {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.aciklama {
+    position: absolute; /* Mutlaka gerekli */
+    bottom: -150px; /* Başlangıçta gizli olması için */
+    left: 0; /* Resmin sol kenarına yaslanması için */
+    background-color: white; /* Arka plan rengi ve opaklık */
+    padding: 5px 10px; /* İçeriğin kenarlardan içeri doğru boşluk bırakması */
+    border-radius: 5px; /* Köşelerin yuvarlatılması */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölgelik eklenmesi */
+    transition: bottom 0.3s ease; /* Animasyon efekti için */
+    display: none; /* Başlangıçta gizli yapmak için */
+    width: 100%; /* Resmin genişliği kadar */
+    height: 100%; /* Otomatik yükseklik */
+}
+
+.col-md-4:hover .aciklama {
+    bottom: 0; /* Hover olduğunda açıklamayı göster */
+    display:block;
+}
+header p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+header h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    color: rgb(219, 190, 21);
+}
