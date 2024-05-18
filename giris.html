@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatay Hakkında Bilgi</title>
+    <link rel="stylesheet" href="giris-style.css"> <!-- Stil dosyası bağlantısı -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Menü çubuğu -->
+    <nav class="navbar navbar-expand-lg navbar-aqua bg-dark">
+        <a class="navbar-brand" href="#">Yıldıray Ali Kara</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Menü</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Ana Sayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ozgecmis.html">Özgeçmişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ilgialanlarım.html">İlgi Alanlarım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sehrim.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="yemeklerimiz.html">Mirasımız</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">İletişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="giris.html">Giriş</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Login</h2>
+        <form method="post" action="giris.php">
+            <label for="username">Kullanıcı Adı[Öğrenci e-mail'i]:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Şifre [Öğrenci Numarası]:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Giriş">
+        </form>
+    </div>
+    <!--Ana menü çubuğu için bootstrap etiketi-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
