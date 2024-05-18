@@ -13,7 +13,7 @@ else {
 //Eğer doğruysa ekrana Hoşgeldiniz b231210048 yazısını döndür ve kullanıcı butona tıklayınca onu yeniden Giriş sayfasına at.
     if ($email === 'b231210048@sakarya.edu.tr' && $password === 'b231210048') {
         echo '<div style="font-size: 24px;">Hoşgeldiniz ' . $password . '</div>';
-        echo '<form action="iletisim.html" style="margin-top: 20px;">
+        echo '<form action="iletisim.html" style="margin-top: 20px; color=black; backgroundcolor=white">
         <input type="submit" value="İletişim Sayfasına Git" style="padding: 10px 20px; font-size: 18px;">
       </form>';
     }
