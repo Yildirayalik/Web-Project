@@ -1,0 +1,91 @@
+/* Genel sayfa stili */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ayarlanıyor */
+    background-color: #f4f4f4; /* Arka plan rengi ayarlanıyor */
+    justify-content: center; /* İçeriği yatayda ortalıyor */
+    align-items: center; /* İçeriği dikeyde ortalıyor */
+    height: 100vh; /* Yüksekliği tam ekran yapıyor */
+    margin: 0; /* Varsayılan dış boşluğu kaldırıyor */
+}
+
+/* Formun bulunduğu konteyner stili */
+.container {
+    background-color: #fff; /* Arka plan rengi beyaz yapılıyor */
+    padding: 10px; /* İç boşluk ayarlanıyor */
+    border-radius: 8px; /* Köşeleri yuvarlatılıyor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekleniyor */
+    width: 50%; /* Genişlik %50 yapılıyor */
+    margin-top: auto; /* Üstten otomatik boşluk ekleniyor */
+}
+
+/* Başlık stili */
+h2 {
+    margin-bottom: 20px; /* Başlığın altına boşluk ekleniyor */
+}
+
+/* Etiket stili */
+label {
+    display: block; /* Etiketler blok olarak gösteriliyor */
+    margin-bottom: 8px; /* Altına boşluk ekleniyor */
+    font-weight: bold; /* Yazı tipi kalın yapılıyor */
+}
+
+/* Giriş alanları, metin alanı ve seçim kutusu stili */
+input, textarea, select {
+    width: 100%; /* Genişlik %100 yapılıyor */
+    padding: 10px; /* İç boşluk ekleniyor */
+    margin-bottom: 20px; /* Altına boşluk ekleniyor */
+    border: 1px solid #ccc; /* Kenarlık rengi ayarlanıyor */
+    border-radius: 4px; /* Köşeler yuvarlatılıyor */
+}
+
+/* Checkbox stili */
+input[type="checkbox"] {
+    width: auto; /* Genişlik otomatik yapılıyor */
+    margin-right: 10px; /* Sağa boşluk ekleniyor */
+}
+
+/* Butonların yerleşimi */
+.buttons {
+    display: flex; /* Esnek kutu modeli kullanılıyor */
+    justify-content: space-between; /* Butonlar arası boşluk sağlanıyor */
+}
+
+/* Buton stili */
+button {
+    background-color: #4CAF50; /* Arka plan rengi ayarlanıyor */
+    color: white; /* Yazı rengi beyaz yapılıyor */
+    padding: 10px 20px; /* İç boşluk ayarlanıyor */
+    border: none; /* Kenarlık kaldırılıyor */
+    border-radius: 4px; /* Köşeler yuvarlatılıyor */
+    cursor: pointer; /* Fare imleci pointer yapılıyor */
+}
+
+/* Buton üzerine gelinceki stili */
+button:hover {
+    background-color: #45a049; /* Arka plan rengi değiştirilerek hover efekti ekleniyor */
+}
+
+/* Başarı mesajı stili */
+.success-message {
+    background-color: #d4edda; /* Arka plan rengi yeşil yapılıyor */
+    color: #155724; /* Yazı rengi koyu yeşil yapılıyor */
+    padding: 10px; /* İç boşluk ekleniyor */
+    border-radius: 4px; /* Köşeler yuvarlatılıyor */
+    margin-top: 20px; /* Üstüne boşluk ekleniyor */
+    text-align: center; /* Metin ortalanıyor */
+}
+
+/* Form div stili */
+.formdiv {
+    padding: 5%; /* İç boşluk ayarlanıyor */
+    border: 1px solid black; /* Siyah kenarlık ekleniyor */
+}
+
+/* Admin div stili */
+.admindiv {
+    background-color: white; /* Arka plan rengi beyaz yapılıyor */
+    padding: 5%; /* İç boşluk ayarlanıyor */
+    margin: 5%; /* Dış boşluk ayarlanıyor */
+    border: 1px solid black; /* Siyah kenarlık ekleniyor */
+}
