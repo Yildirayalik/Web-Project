@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyasını bağlama -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Menü çubuğu -->
+    <nav class="navbar navbar-expand-lg navbar-aqua bg-dark">
+        <a class="navbar-brand" href="#">Yıldıray Ali Kara</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Menü</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Ana Sayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ozgecmis.html">Özgeçmişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sehrim.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="yemeklerimiz.html">Yemeklerimiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">İletişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Giriş</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="app" class="container">
+        <div class="formdiv">
+            <h2>İletişim Formu</h2>
+            <!-- Vue.js ile formu yöneten HTML formu -->
+            <form @submit.prevent="formuDogrula" @reset="formuSifirla">
+                <!-- Ad alanı -->
+                <label for="firstname">Ad:</label>
+                <input type="text" id="firstname" v-model="form.firstname" required>
+
+                <!-- Soyad alanı -->
+                <label for="lastname">Soyad:</label>
+                <input type="text" id="lastname" v-model="form.lastname" required>
+
+                <!-- Doğum tarihi alanı -->
+                <label for="birthdate">Doğum Tarihi:</label>
+                <input type="date" id="birthdate" v-model="form.birthdate" required>
+
+                <!-- Kullanıcı adı alanı -->
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" v-model="form.username" required>
+
+                <!-- E-posta alanı -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" v-model="form.email" required>
+
+                <!-- Şifre alanı -->
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" v-model="form.password" required>
+
+                <!-- Cinsiyet seçimi -->
+                <label for="gender">Cinsiyet:</label>
+                <select id="gender" v-model="form.gender" required>
+                    <option value="">Seçiniz</option>
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                </select>
+
+                <!-- Bülten aboneliği seçimi -->
+                <label for="newsletter">Bültene Abone Ol:</label>
+                <input type="checkbox" id="newsletter" v-model="form.newsletter">
+
+                <!-- Gönder ve temizle butonları -->
+                <div class="buttons">
+                    <button type="submit">Gönder</button>
+                    <button type="reset">Temizle</button>
+                </div>
+            </form>
+
+            <!-- Başarı mesajı -->
+            <div v-if="successMessage" class="success-message">
+                {{ successMessage }}
+            </div>
+
+            <!-- Admin Girişi Butonu -->
+            <div class="admin-login">
+                <button @click="adminGirisSayfasinaGit">Admin Girişi</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script> <!-- Vue.js kütüphanesini bağlama -->
+    <script src="app.js"></script> <!-- JavaScript dosyasını bağlama -->
+    <!-- Ana menü çubuğu için bootstrap etiketi -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
