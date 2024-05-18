@@ -157,15 +157,17 @@
                     // admin-login.html sayfasına yönlendir
                     window.location.href = 'admin-login.html';
                 },
+                // Form kontrol işlemi
                 formuKontrolEt() {
+                    // Formdaki alanların doldurulup doldurulmadığını kontrol et
                     if (!this.form.firstname || !this.form.lastname || !this.form.birthdate || !this.form.username || !this.form.email || !this.form.password || !this.form.gender) {
-                        alert('Lütfen tüm alanları doldurun.');
+                        alert('Lütfen tüm alanları doldurun.'); // E-posta formatı geçerli değilse uyarı ver
                         return;
                     }
-
+                    // E-posta formatını kontrol et
                     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                     if (!emailPattern.test(this.form.email)) {
-                        alert('Geçerli bir e-posta adresi giriniz.');
+                        alert('Geçerli bir e-posta adresi giriniz.'); // Tüm alanlar doğru şekilde doldurulmuşsa başarılı mesajı ver
                         return;
                     }
 
