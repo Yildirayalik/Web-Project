@@ -81,13 +81,16 @@
                 </select>
 
                 <!-- Bülten aboneliği seçimi -->
-                <label for="newsletter">Bültene Abone Ol:</label>
+                <label for="newsletter">Bilgilerim kaydedilsin:</label>
                 <input type="checkbox" id="newsletter" v-model="form.newsletter">
 
                 <!-- Gönder ve temizle butonları -->
                 <div class="buttons">
                     <button type="submit">Gönder</button>
                     <button type="reset">Temizle</button>
+                </div>
+                <div class="buttons">
+                    <button type="button" @click="formuKontrolEt">Kontrol Et</button>
                 </div>
             </form>
             <!-- Başarı mesajını gösteren div -->
@@ -115,7 +118,7 @@
                     email: '', // E-posta
                     password: '', // Şifre
                     gender: '', // Cinsiyet
-                    newsletter: false // Bülten aboneliği
+                    newsletter: false // Onay vermesi
                 },
                 successMessage: '' // Başarı mesajı
             },
@@ -153,6 +156,20 @@
                 adminGirisSayfasinaGit() {
                     // admin-login.html sayfasına yönlendir
                     window.location.href = 'admin-login.html';
+                },
+                formuKontrolEt() {
+                    if (!this.form.firstname || !this.form.lastname || !this.form.birthdate || !this.form.username || !this.form.email || !this.form.password || !this.form.gender) {
+                        alert('Lütfen tüm alanları doldurun.');
+                        return;
+                    }
+
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(this.form.email)) {
+                        alert('Geçerli bir e-posta adresi giriniz.');
+                        return;
+                    }
+
+                    alert('Form kontrolü başarılı. Tüm alanlar doğru şekilde doldurulmuş.');
                 }
             }
         });
