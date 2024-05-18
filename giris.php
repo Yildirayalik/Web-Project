@@ -25,5 +25,5 @@ else {
         window.location.href = "giris.html"; 
       </script>';
     }
-}
+
 ?>
