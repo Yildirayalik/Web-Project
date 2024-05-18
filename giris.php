@@ -17,13 +17,12 @@ else {
         <input type="submit" value="İletişim Sayfasına Git" style="padding: 10px 20px; font-size: 18px;">
       </form>';
     }
+    //Eğer yanlışsa ekrana "Yanlış girdiniz lütfen tekrar deneyiniz!" alerti çıksın ve giriş sayfasına otomatik yönlendirsin.
+    else {
+            echo '<script>
+            alert("Yanlış girdiniz lütfen tekrar deneyiniz!");
+            window.location.href = "giris.html"; 
+          </script>';
+        }
     } 
-//Eğer yanlışsa ekrana "Yanlış girdiniz lütfen tekrar deneyiniz!" alerti çıksın ve giriş sayfasına otomatik yönlendirsin.
-else {
-        echo '<script>
-        alert("Yanlış girdiniz lütfen tekrar deneyiniz!");
-        window.location.href = "giris.html"; 
-      </script>';
-    }
-
 ?>
