@@ -24,7 +24,7 @@ new Vue({
                 // Başarı mesajını ayarla
                 this.successMessage = 'Form başarıyla gönderildi!';
                 // Form verilerini localStorage'a kaydet
-                localStorage.setItem('formVerileri', JSON.stringify(this.form));
+                localStorage.setItem('formData', JSON.stringify(this.form));
                 // Formu sıfırla
                 this.formuSifirla();
             } else {

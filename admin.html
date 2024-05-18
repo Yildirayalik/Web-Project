@@ -71,8 +71,8 @@
             const resultsDiv = document.getElementById('results'); // Sonuçları gösterecek div
 
             if (formData) {
-                  // Form verilerini Türkçe olarak isimlendir
-                  const fieldNames = {
+                // Form verilerini Türkçe olarak isimlendir
+                const fieldNames = {
                     firstname: 'Ad',
                     lastname: 'Soyad',
                     birthdate: 'Doğum Tarihi',
@@ -80,11 +80,13 @@
                     email: 'E-posta',
                     password: 'Şifre',
                     gender: 'Cinsiyet',
-                    newsletter: 'Bilgilerim Kaydedilsin' }
+                    newsletter: 'Bülten Aboneliği'
+                };
+
                 // Her bir form verisini sayfaya ekler
                 for (const [key, value] of Object.entries(formData)) {
                     const p = document.createElement('p'); // Yeni bir p elementi oluşturur
-                    p.textContent = `${key}: ${value}`; // p elementinin içeriğini ayarlar
+                    p.textContent = `${fieldNames[key] || key}: ${value}`; // p elementinin içeriğini ayarlar
                     resultsDiv.appendChild(p); // p elementini sonuçlar div'ine ekler
                 }
             } else {
