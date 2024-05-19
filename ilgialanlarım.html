@@ -7,6 +7,8 @@
     <title>İlgi Alanlarım</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="hava.js"></script>
+    <link rel="stylesheet" href="ilgialanlarım.css">
 </head>
 
 <body>
@@ -43,6 +45,19 @@
             </ul>
         </div>
     </nav>
+    <header>
+        <h1>Gezmeyi çok sevdiğimden bahsetmiştim.</h1>
+        <p> Dünyayı gezen insanların birincil olarak bakması gereken şey, hepinizin
+            bildiği üzere hava durumu. Uçak bileti alırken, herhangi bir gezi planlarken hava durumu son derece
+            önemlidir. Özellikle açık hava etkinlikleri veya doğa gezileri yaparken, hava durumunu bilmek, seyahatinizin
+            sorunsuz ve keyifli geçmesini sağlar. Bu yüzden sitemize eklediğimiz hava durumu API'ı, gezi planlarınızı
+            yaparken size yardımcı olacak ve seyahatlerinizi daha güvenli hale getirecektir.
+        </p>
+        <p>Aşağı da Sakarya'nın 7 günlük hava durumu ve hava derecesi verilmiştir.</p>
+    </header>
+    <div class="container" id="hava-container">
+        <div class="row weather-info" id="hava-container-row"></div>
+    </div>
     <!-- Bootstrap JS (jQuery and Popper.js are required for Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
