@@ -1,11 +1,11 @@
   /* header elemanını bir flex container olarak ayarla */
   header {
-    display: flex;
+    display: flex;/*Responsive kullandığımı simgeler.*/
     justify-content: space-between; /* içerikleri sağa ve sola hizala */
     flex-wrap: wrap; /* içerikler sığmazsa alt satıra geç */
   }
   header .resim div {
-    display: flex;
+    display: flex; /*Responsive kullandığımı simgeler.*/
   }
   
   .logo{
@@ -23,8 +23,8 @@
     margin-right: 10px; /* Sağa boşluk ekleme */
   }
   #Beceriler .skills-container {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*Responsive kullandığımı simgeler.*/
+    justify-content: space-between; /*Responsive kullandığımı simgeler.*/
   }
   #Beceriler article {
     flex-basis: 48%; /* İki sütun oluşturmak için genişlik ayarı */
